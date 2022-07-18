@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="/icon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100;1,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>TBC Bank</title>
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <nav>
+      <p class="welcome">Welcome to TBC Bank</p>
+      <img src="logo.png" alt="Logo" class="logo" />
+      <form class="login">
+        <input
+          type="text"
+          placeholder="username"
+          class="login__input login__input--user"
+        />
+
+        <input
+          class="login__input login__input--pin"
+          placeholder="password"
+          type="text"
+          maxlength="8"
+        />
+        <button class="login__btn">&rarr;</button>
+      </form>
+    </nav>
+
+    <main class="application">
+      <div class="intro">
+        <div class="intro--header">
+          <h1>. Log in to your account for the best financial tools</h1>
+          <br />
+          <h1 style="color: green">. Easy Transactions ✓</h1>
+          <br />
+          <h1>. Loan request</h1>
+          <br />
+          <h1>. Budget management</h1>
+          <br />
+          <h1>. Currency conversion</h1>
+          <br />
+          <h1>. Annual Statements</h1>
+        </div>
+        <div class="banking--image">
+          <img src="./banking.jpeg" alt="banking--image" />
+        </div>
+      </div>
+
+      <div class="app">
+        <!-- ACC-BALANCE -->
+        <div class="balance">
+          <div>
+            <p class="balance--tag">Account balance</p>
+            <p class="balance--date">
+              <span class="date">12/12/2022</span>
+            </p>
+          </div>
+          <p class="balance--value">1200€</p>
+        </div>
+
+        <!-- ACCOUNT-TRANSACTIONS -->
+        <div class="movements">
+          <div class="movements__row">
+            <div class="movements__type movements__type--deposit">
+              3 deposit
+            </div>
+            <div class="movements__date">10 days ago</div>
+            <div class="movements__value">10 000$</div>
+          </div>
+          <div class="movements__row">
+            <div class="movements__type movements__type--withdrawal">
+              2 withdraw
+            </div>
+            <div class="movements__date">12/12/2022</div>
+            <div class="movements__value">-561€</div>
+          </div>
+        </div>
+
+        <!-- BALANCE-SUMMARY -->
+        <div class="summary">
+          <p class="summary__label">Deposits</p>
+          <p class="summary__value summary__value--in">1200€</p>
+          <p class="summary__label">Withdrawals</p>
+          <p class="summary__value summary__value--out">1200€</p>
+          <p class="summary__label">Interest</p>
+          <p class="summary__value summary__value--interest">1200€</p>
+          <button class="btn--sort">&downarrow; SORT</button>
+        </div>
+
+        <!-- TRANSFERS -->
+        <div class="operation operation--transfer">
+          <h2>Transfer money</h2>
+          <form class="form form--transfer">
+            <input type="text" class="form__input form__input--to" />
+            <input type="number" class="form__input form__input--amount" />
+            <button class="form__btn form__btn--transfer">⇨</button>
+            <label class="form__label">Receiver</label>
+            <label class="form__label">Amount</label>
+          </form>
+        </div>
+
+        <!-- LOANS -->
+        <div class="operation operation--loan">
+          <h2>Request loan</h2>
+          <form class="form form--loan">
+            <input type="number" class="form__input form__input--loan-amount" />
+            <button class="form__btn form__btn--loan">⇨</button>
+            <label class="form__label form__label--loan">Amount</label>
+          </form>
+        </div>
+
+        <!-- REMOVE-ACCOUNT -->
+        <div class="operation operation--close">
+          <h2>Close account</h2>
+          <form class="form form--close">
+            <input type="text" class="form__input form__input--user" />
+            <input
+              type="password"
+              maxlength="6"
+              class="form__input form__input--pin"
+            />
+            <button class="form__btn form__btn--close">⇨</button>
+            <label class="form__label">Confirm username</label>
+            <label class="form__label">Confirm password</label>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <div class="footer">
+      <footer>&copy;2022 Giorgi Urumashvili</footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+<!--Giorgi Urumashvili-->
